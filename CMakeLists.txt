@@ -13,4 +13,6 @@ add_executable(T17_HW main.cpp
         Article.cpp
         Article.h
         Library.cpp
-        Library.h)
+        Library.h
+        Exeption.cpp
+        Exeption.h)
