@@ -16,6 +16,7 @@ public:
 
     void getArticle()const;
     void addArticle(Article* obj);
+    void show()const override;
 };
 
 

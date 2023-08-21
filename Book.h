@@ -15,7 +15,7 @@ public:
     void setSummary(const string &summary);
     const string &getSummary()const;
 
-    virtual void show()const;
+    void show()const override;
 };
 
 

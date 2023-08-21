@@ -11,4 +11,6 @@ add_executable(T17_HW main.cpp
         Magazine.h
         Magazine.cpp
         Article.cpp
-        Article.h)
+        Article.h
+        Library.cpp
+        Library.h)

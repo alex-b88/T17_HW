@@ -24,3 +24,11 @@ void Magazine::getArticle() const {
 void Magazine::addArticle(Article* obj) {
         art.push_back(obj);
 }
+
+void Magazine::show() const {
+    Publication::show();
+    for (int i = 0; i <art.size(); ++i) {
+            art[i]->showFullArticle();
+            cout << endl;
+    }
+}
