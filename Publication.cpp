@@ -3,15 +3,13 @@
 Publication::Publication() {
     name="Название не задано";
     author="Автор не указан";
-    publish_year=0;
-    description="Описание не указано";
+    publish_year=Date();
 }
 
-Publication::Publication(string name, string author, int publish_year, string description) {
+Publication::Publication(string name, string author, Date publish_year) {
     setName(name);
     setAuthor(author);
     setPublishYear(publish_year);
-    setDescription(description);
 }
 
 Publication::~Publication() {
@@ -34,19 +32,17 @@ void Publication::setAuthor(const string &author) {
     Publication::author = author;
 }
 
-int Publication::getPublishYear() const {
+Date Publication::getPublishYear() const {
     return publish_year;
 }
 
-void Publication::setPublishYear(int publishYear) {
+void Publication::setPublishYear(Date publishYear) {
     publish_year = publishYear;
 }
 
-const string &Publication::getDescription() const {
-    return description;
-}
+void Publication::show() const {
+    cout <<"Название: "<<name <<endl;
+    cout <<"Автор: " <<author <<endl;
+    cout <<"Год публикации: " << publish_year.getYear()<<endl;
 
-void Publication::setDescription(const string &description) {
-    Publication::description = description;
 }
-
