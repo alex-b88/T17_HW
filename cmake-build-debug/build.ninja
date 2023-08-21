@@ -67,6 +67,12 @@ build CMakeFiles/T17_HW.dir/Date.cpp.o: CXX_COMPILER__T17_HW_unscanned_Debug /Us
   OBJECT_DIR = CMakeFiles/T17_HW.dir
   OBJECT_FILE_DIR = CMakeFiles/T17_HW.dir
 
+build CMakeFiles/T17_HW.dir/Book.cpp.o: CXX_COMPILER__T17_HW_unscanned_Debug /Users/admin/CLionProjects/T17-HW/Book.cpp || cmake_object_order_depends_target_T17_HW
+  DEP_FILE = CMakeFiles/T17_HW.dir/Book.cpp.o.d
+  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/T17_HW.dir
+  OBJECT_FILE_DIR = CMakeFiles/T17_HW.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target T17_HW
@@ -75,7 +81,7 @@ build CMakeFiles/T17_HW.dir/Date.cpp.o: CXX_COMPILER__T17_HW_unscanned_Debug /Us
 #############################################
 # Link the executable T17_HW
 
-build T17_HW: CXX_EXECUTABLE_LINKER__T17_HW_Debug CMakeFiles/T17_HW.dir/main.cpp.o CMakeFiles/T17_HW.dir/Publication.cpp.o CMakeFiles/T17_HW.dir/Date.cpp.o
+build T17_HW: CXX_EXECUTABLE_LINKER__T17_HW_Debug CMakeFiles/T17_HW.dir/main.cpp.o CMakeFiles/T17_HW.dir/Publication.cpp.o CMakeFiles/T17_HW.dir/Date.cpp.o CMakeFiles/T17_HW.dir/Book.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/T17_HW.dir
   POST_BUILD = :

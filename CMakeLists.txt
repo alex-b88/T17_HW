@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(T17_HW main.cpp
         Publication.cpp
         Publication.h
-        Date.cpp)
+        Date.cpp
+        Book.cpp)
