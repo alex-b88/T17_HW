@@ -8,4 +8,7 @@ add_executable(T17_HW main.cpp
         Publication.h
         Date.cpp
         Book.cpp
-        Magazine.h)
+        Magazine.h
+        Magazine.cpp
+        Article.cpp
+        Article.h)

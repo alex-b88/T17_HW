@@ -4,17 +4,18 @@
 #include "Publication.h"
 #include "vector"
 #include "algorithm"
+#include "Article.h"
 
 class Magazine : public Publication {
 protected:
-    vector<string> article;
+    vector<Article*> art;
 public:
     Magazine();
     Magazine(string name, string author, Date publish_year);
     ~Magazine();
 
     void getArticle()const;
-    void addArticle(string obj);
+    void addArticle(Article* obj);
 };
 
 
