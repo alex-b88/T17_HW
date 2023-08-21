@@ -2,7 +2,8 @@
 #include "Library.h"
 
 Library::Library(string library_name) {
-    if (library_name.size()>0)
+    if (library_name.size()<=0)
+        throw new NameExeption();
         this->library_name=library_name;
 }
 
@@ -47,6 +48,7 @@ void Library::delObject() {
         return;
     }
     else{
+        cout <<"\"" << objcts[x]->getName() <<"\"" << " успешно удален из каталога" << endl;
         delete objcts[x];
         objcts.erase(objcts.begin()+x);
     }

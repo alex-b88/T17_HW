@@ -6,6 +6,7 @@
 #include "Magazine.h"
 #include "vector"
 #include "algorithm"
+#include "Exeption.h"
 
 class Library {
 protected:

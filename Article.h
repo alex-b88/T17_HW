@@ -3,6 +3,7 @@
 
 #include "iostream"
 #include "string"
+#include "Exeption.h"
 
 using namespace std;
 

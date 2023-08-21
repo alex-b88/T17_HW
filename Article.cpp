@@ -20,11 +20,13 @@ void Article::showFullArticle() const {
 }
 
 void Article::setTitle(string title) {
-    if (title.size()>0)
-        this->title=title;
+    if (title.size()<=0)
+        throw new NameExeption();
+    Article::title=title;
 }
 
 void Article::setBody(string body) {
-    if (body.size()>0)
-        this->body=body;
+    if (body.size()<=0)
+        throw new NameExeption();
+    Article::body=body;
 }

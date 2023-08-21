@@ -21,6 +21,8 @@ const string &Publication::getName() const {
 }
 
 void Publication::setName(const string &name) {
+    if (name.size()<=0)
+        throw new NameExeption();
     Publication::name = name;
 }
 
@@ -29,6 +31,8 @@ const string &Publication::getAuthor() const {
 }
 
 void Publication::setAuthor(const string &author) {
+    if (author.size()<=0)
+        throw new NameExeption();
     Publication::author = author;
 }
 

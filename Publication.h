@@ -3,6 +3,7 @@
 #include "iostream"
 #include "string"
 #include "Date.h"
+#include "Exeption.h"
 
 using namespace std;
 
